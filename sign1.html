@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two Columns</title>
+    <style>
+        .container {
+            max-width: 800px;  /* Set your desired maximum width here */
+            margin: 0 auto;  /* Center the container horizontally */
+        }
+
+        p.name {
+            color:#004188;
+            font-weight: bold;
+
+        }
+
+        p.position {
+            color: #f29100;
+            font-weight: bold;
+        }
+
+        p.link {
+            color: grey;
+            font-size: 9;
+        }
+
+        table {
+            width: 100%;  /* Ensures full width in Outlook */
+            border-collapse: collapse;
+        }
+
+        .column {
+            width: 45%;
+            padding: 20px;
+            display: table-cell;
+            vertical-align: top;
+        }
+
+        .column p {
+            font-family: "Colibri", sans-serif;  /* Fallback to sans-serif if Colibri is unavailable */
+            font-size: 12pt;
+            margin-bottom: 10px;
+            line-height: 0.4;
+        }
+
+        .column a{
+            font-family: "Colibri", sans-serif; 
+            font-size: 12pt;
+        }
+
+        .column img {
+            display: block;  /* Ensures image behaves like a block element */
+            margin-bottom: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <table>
+            <tr>
+                <td class="column">
+                    <p class="name">З повагою,</p>
+                    <p class="name">Прізвище Ім’я</p>
+                    <p>&nbsp;</p>
+                    <p class="position">Назва Посади</p>
+                    <p class="position">Центр громадського здоров'я</p>
+                    <p class="position">МОЗ Уркаїни</p>
+                    <p>&nbsp;</p>
+                    <p class="link">e-mail: <a href="mailto:n.surname@phc.org.ua">n.surname@phc.org.ua</a>
+                    <p class="link">phone: <a href="tel:+3801231234567">+38(0123)123-45-67</a>
+                    <p class="link"> <a href="https://phc.org.ua">phc.org.ua</a>
+                    <p>&nbsp;</p>
+                    <a href="https://phc.org.ua/">
+                        <img src="https://phc.org.ua/phc-logo-ua.png" alt="Public Health Center Logo">
+                    </a>
+                </td>
+                <td class="column">
+                    <p class="name">Best regards</p>
+                    <p class="name">Name Surname</p>
+                    <p>&nbsp;</p>
+                    <p class="position">Work Position</p>
+                    <p class="position">Public Health Center of the MOH of Ukraine</p>
+                    <p class="position">of Ukraine</p>
+                    <p>&nbsp;</p>
+                    <p class="link">e-mail: <a href="mailto:n.surname@phc.org.ua">n.surname@phc.org.ua</a>
+                    <p class="link">phone: <a href="tel:+3801231234567">+38(0123)123-45-67</a>
+                    <p class="link"> <a href="https://phc.org.ua">phc.org.ua</a>
+                    <p>&nbsp;</p>
+                    <a href="https://phc.org.ua/">
+                        <img src="https://phc.org.ua/phc-logo-eng.png" alt="Public Health Center Logo">
+                    </a>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
